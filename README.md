@@ -7,15 +7,30 @@ Created a website for a unicorn ride-sharing service called Wild Rydes. It is a 
 This app allows users to create an account and log in, followed by a secure authentication process. Once authenticated, users can easily request a ride by clicking on a location on the map.
 
 ## List of AWS services used
-Amazon Cognito, Amazon Amplify, API Gateway, AWS Lambda, Amazon Dynamodb
+Amazon Cognito: Implements authentication and authorization for web applications by creating a user portal. Users are required to provide their information and password, after which they receive a verification message along with an authorization token.
+
+Amazon IAM: Creates a role for Lambda and DynamoDB.
+
+Amazon Amplify: Used to build and makes changes to the web application.
+
+API Gateway:Collect unicorn requestion which then calls the lambda function to send a unicorn.
+
+AWS Lambda:Processes API requests triggered by user login, which are handled by Unicorn and routed through the API Gateway. The request is then processed and stored in DynamoDB.
+
+Amazon DynamoDB: Creates table that collects and record the unicron request.
 
 ## Welcome page
 ![1719366594950](https://github.com/user-attachments/assets/b4226b3f-26b3-4f83-beee-eaf6dc545183)
 
+## Login
+![Screenshot 2025-05-31 175948](https://github.com/user-attachments/assets/aa94b8e8-812a-42fd-8a24-9b0637ab02e7)
+
+## Map
+![image](https://github.com/user-attachments/assets/f7f3d9b2-78b0-4bd2-96c6-c2d10f24af21)
+
+
 
 ## The Lambda Function Code
-Here is the code for the Lambda function, originally taken from the [AWS workshop](https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/module-3/ ), and updated for Node 20.x:
-
 ```node
 import { randomBytes } from 'crypto';
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
