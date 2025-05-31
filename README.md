@@ -1,15 +1,15 @@
 # AWS Wildrydes
 
-## TL;DR
-We're creating a web application for a unicorn ride-sharing service called Wild Rydes (from the original [Amazon workshop](https://aws.amazon.com/serverless-workshops)).  The app uses IAM, Amplify, Cognito, Lambda, API Gateway and DynamoDB, with code stored in GitHub and incorporated into a CI/CD pipeline with Amplify.
+## WildRydes
+Created a website for a unicorn ride-sharing service called Wild Rydes. It is a serverless application that was fully created through aws services
 
-The app will let you create an account and log in, then request a ride by clicking on a map (powered by ArcGIS).  The code can also be extended to build out more functionality.
+Functionality
+This app allows users to create an account and log in, followed by a secure authentication process. Once authenticated, users can easily request a ride by clicking on a location on the map.
 
-## Cost
-All services used are eligible for the [AWS Free Tier](https://aws.amazon.com/free/).  Outside of the Free Tier, there may be small charges associated with building the app (less than $1 USD), but charges will continue to incur if you leave the app running. So I had to delete everything after completing.
+## List of AWS services used
+Amazon Cognito, Amazon Amplify, API Gateway, AWS Lambda, Amazon Dynamodb
 
-## The Application Code
-The application code is here in this repository.
+
 
 ## The Lambda Function Code
 Here is the code for the Lambda function, originally taken from the [AWS workshop](https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/module-3/ ), and updated for Node 20.x:
