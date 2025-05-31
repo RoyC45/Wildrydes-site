@@ -1,4 +1,4 @@
-# AWS Project - Build a Full End-to-End Web Application with 7 Services 
+# AWS Wildrydes
 
 ## TL;DR
 We're creating a web application for a unicorn ride-sharing service called Wild Rydes (from the original [Amazon workshop](https://aws.amazon.com/serverless-workshops)).  The app uses IAM, Amplify, Cognito, Lambda, API Gateway and DynamoDB, with code stored in GitHub and incorporated into a CI/CD pipeline with Amplify.
