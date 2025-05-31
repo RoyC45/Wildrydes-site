@@ -3,7 +3,7 @@
 ## WildRydes
 Created a website for a unicorn ride-sharing service called Wild Rydes. It is a serverless application that was fully created through aws services
 
-Functionality
+## Functionality
 This app allows users to create an account and log in, followed by a secure authentication process. Once authenticated, users can easily request a ride by clicking on a location on the map.
 
 ## List of AWS services used
