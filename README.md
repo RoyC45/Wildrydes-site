@@ -9,6 +9,8 @@ This app allows users to create an account and log in, followed by a secure auth
 ## List of AWS services used
 Amazon Cognito, Amazon Amplify, API Gateway, AWS Lambda, Amazon Dynamodb
 
+## Welcome page
+![1719366594950](https://github.com/user-attachments/assets/b4226b3f-26b3-4f83-beee-eaf6dc545183)
 
 
 ## The Lambda Function Code
